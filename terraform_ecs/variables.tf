@@ -1,3 +1,4 @@
+variable "region" {default = "us-east-1"}
 variable "backend_port" {default = 8080}
 variable "domain" {default = "example.com"}
 variable "hostname" {default = "cohere"}
