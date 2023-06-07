@@ -1,0 +1,17 @@
+variable "backend_port" {default = 8080}
+variable "domain" {default = "example.com"}
+variable "hostname" {default = "cohere"}
+variable "ecr_repository_name" {default = "gayathri-cohere-demo"}
+variable "ecs_cluster_name" {default = "cohere_ecs_test"}
+variable "ecs_service_name" {default = "cohere_service_test"}
+variable "ecs_task_def_name" {default = "cohere_task_service"}
+variable "load_balancer_name" {default = "cohere-test-lb"}
+variable "ecs_cpu" {default = 256}
+variable "ecs_memory" {default = 512}
+variable "desired_containers" {default = 1}
+variable "health_check_path" {default = "/healthcheck"}
+variable "vpc_name" {default = "cohere-example"}
+variable "public_subnet_a_name" {default = "cohere-example-public-a" }
+variable "public_subnet_b_name" {default = "cohere-example-public-b" }
+variable "private_subnet_a_name" {default = "cohere-example-private-a" }
+variable "private_subnet_b_name" {default = "cohere-example-private-b" }
